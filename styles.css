@@ -4,7 +4,7 @@
     margin: auto;
     margin-top: 100px;
     box-shadow: 0px 15px 20px #0b1e4259;
-    background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+   background: linear-gradient(0deg, rgba(247, 247, 247, 0.125) 23.8%, rgba(252, 221, 221, 0.271) 92%);
 
 
    
@@ -13,13 +13,13 @@
 #current-temp{
     box-shadow: 0px 15px 20px #410b4214;
     border-radius: 50%;
-    background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
+    background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
     /* outline: auto; */
-    display:flex;
+    /* display:flex; */
     max-height: 120px;
     max-width: 120px;
     padding-right: 53px;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left: 20px;
 
     margin-top: 50px;
@@ -27,15 +27,27 @@
     /* margin-bottom: 40px; */
    
 }
-#Humidity, #Wind, #Forecast{
+#Humidity, #Wind{
     font-size: small;
     margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: rgb(250, 118, 140);
+    
 }
 #Forecast{
     margin-left: 280px;
     margin-top: 30px;
     font-size: small;
     display: flex;
+    color: rgb(250, 118, 140);
+}
+#week-forecast{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px
+   
 }
 
 .untis{
@@ -45,12 +57,15 @@
     font-weight: 300;
     padding-left: 10px;
     margin-bottom: 10px;
+    /* color: rgb(250, 118, 140); */
 
 } 
 #current-city{ 
 font-size: large;   
  margin-top: 60px;
  margin-left: 15px;
+ color: rgb(250, 118, 140);
+ font-family: 'Courier New', Courier, monospace;
      
     
 }
@@ -58,6 +73,8 @@ font-size: large;
     font-size:medium;
     /* margin-bottom: 100px; */
      margin-left: 15px;
+     color: rgb(250, 118, 140);
+     font-family: 'Courier New', Courier, monospace;
 }
 
 ul {
@@ -68,33 +85,92 @@ ul {
     margin-left: 60px;
     display: flex;
 }
-.week{
-    display: block;
-    display: flex;
-    
-}
-#second-day, #third-day, #fourth-day,#fifth-day,#sixth-day,#seventh-day{
-     box-shadow: 0px 15px 20px #410b4214;
-    border-radius: 50%;
-    background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
-    max-height: 100px;
-    max-width: 100px;
-    padding-right: 53px;
-    padding-top: 40px;
-    padding-left: 20px;
-    margin-left: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: small;
-    margin-top: 30px;
-    margin-bottom: 30px;
 
+    
+#first-day{
+    margin-left: 25px;
+    font-size: x-small;
+    padding-bottom: none;
+    
+    /* font-weight: 100; */
 }
+
 #footer{
-    color: rgb(255, 124, 231);
+        color: rgb(252, 178, 190);
     margin-left: 50px;
 }
-/* .active-pink input[type=text] {
-  border-bottom: 1px solid #f48fb1;
-  box-shadow: 0 1px 0 0 #f48fb1;
-} */
+.max-minus-temp{
+    display: flex;
+    margin-right: 50px;
+}
+.main-temp{
+    display: flex;
+    padding-bottom: none;
+    /* margin-bottom: 20px; */
+   
+}
+#main-Forecast{
+    display: flex;
 
+    justify-content:space-between;
+    font-size: x-small;
+    margin-top: 30px;
+    margin-left: 15px;
+    padding-right: 100px;
+}
+#main-temp-high,#main-temp-low{
+    font-size: x-small;
+    margin-top: 30px;
+    margin-right: 50px;
+    /* margin-left: 15px; */
+    /* padding-right: 30px; */
+
+}
+
+#main-icon{
+    margin-left: 30px;
+    margin-bottom: none;
+    font-size: medium;
+    
+ /* margin-bottom: 30px; */
+}
+.week-forecast{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    box-shadow: 0px 15px 20px #410b4214;
+    border-radius: 50%;
+    background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+    max-height: 120px;
+    max-width: 120px;
+    padding-right: 53px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 70px;
+    /* margin-left: 15px; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center; 
+    /* margin-left: 10px; */
+
+}
+.weatherforecast-icon img{
+    /* margin-left: 5px; */
+    /* margin-bottom: 5px; */
+    width: 40px;
+}
+.weatherIcon{
+    width: 35px;
+    margin-right: 40px;
+    /* margin-left: 10px; */
+}
+#search-bar, #search{
+color: rgb(138, 187, 230);
+border-radius: 30px;
+border-color: pink;
+background-color: rgba(255, 255, 255, 0.573);
+}
+a :link{
+    color: pink;
+}

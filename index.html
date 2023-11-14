@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-4">
                 <main>
-                    <h1 id = "current-city"> San Fransisco</h1>
+                    <h1 id = "current-city"> Paris</h1>
                     <h3 id = "current-date"> Sunday, October 24 20:41</h3>
                     <span class="data">
                         <h3 id="Humidity">
@@ -26,18 +26,31 @@
                         <h3 id="Wind">
                             wind
                         </h3>
-                        <h3 id="Forecast">
+                        <!-- <h3 id="Forecast">
                             Forecast
-                        </h3>
+                        </h3> -->
                     </span>
                     
                 </main>
             </div>
             <div class="col-4" id= "current-temp">
-                    <h2 id ="main-temp"> 47 </h2>
-                
 
+                
+                    <h4 id = first-day> mon </h4>
+                    <div id="main-icon"> </div>
+                    <span class="main-temp">
+                        
+
+                        <h2 id ="main-temp"> 47 </h2>
+                    
+    
                         <h4 id = "fahrenheit">  °F </h4>
+                    </span>
+                    <span class = "main-temp-compare">
+
+                        <h6 id = main-Forecast>Forecast</h6>
+                        
+                    </span>
                         <!-- |
                         <h4 id ="celsious">°C </h4> -->
                 
@@ -57,7 +70,7 @@
                         required
                         />
                 <div class="col-1">
-                    <button type="submit" value = "search" > search</button>
+                    <button type="submit" value = "search" id="search" > search</button>
 
                 </div>
                     </form>
@@ -66,30 +79,11 @@
             
         </div>
 
-        <div class="row">
-            <div class="week">
 
-                <div class="col-2" id="second-day">
-                    <h3> Mon</h3>
-                </div>
-                <div class="col-2" id="third-day">
-                    <h3> tue</h3>
-                </div>
-                <div class="col-2" id="fourth-day">
-                    <h3> Wed</h3>
-                </div>
-                <div class="col-2" id="fifth-day">
-                    <h3> Thur </h3>
-                </div>
-                <div class="col-2" id="sixth-day">
-                    <h3> Fri</h3>
-                </div>
-                <div class="col-2" id="seventh-day">
-                    <h3> Sat</h3>
-                </div>
-            </div>
-
+        <div class="weather-forecast" id="week-forecast"> 
+            weather
         </div>
+
 
 
         <footer id = "footer"> 
