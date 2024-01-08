@@ -105,12 +105,13 @@ function displayWeather(response){
 
 }
 function displayForeCast(Response){
-  console.log(Response.data);
+  // console.log(Response.data);
 
+  let ResponseData = Response? Response.data.daily : null
   let cutDays = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
   let forecastHtml = "";
   document.querySelector("#first-day").innerHTML= `${cutDays[day]}`;
-  Response.data.daily.forEach(function (day, index) {
+  ResponseData?.forEach(function (day, index) {
     if (index < 5) {
       forecastHtml =
         forecastHtml +
