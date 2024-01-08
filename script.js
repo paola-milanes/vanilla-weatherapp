@@ -78,14 +78,16 @@ function searchCityName(event) {
   event.preventDefault();
   let key = "9afc5146bea2t731f3ee989f0a290f4o";
   let query = document.querySelector("#search-bar").value;
-  let cityElemet = document.querySelector("#current-city")
-  cityElemet = query
+  // let cityElemet = document.querySelector("#current-city")
+  // cityElemet = query
+
+
 
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${query}&key=${key}&units=imperial`;
   axios.get(apiUrl).then(displayForeCast);
   let cityurl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${key}&units=imperial`;
   axios.get(cityurl).then(displayWeather);
-
+  document.querySelector("#search-bar").attr('placeholder','Start typing to find answers!');
 
   
 }
@@ -97,6 +99,7 @@ function displayWeather(response){
   document.querySelector("#Wind").innerHTML = `Wind: ${response.data.wind.speed} mph`;
   document.querySelector("#main-Forecast").innerHTML = `${response.data.condition.description}`;
   document.querySelector("#main-icon").innerHTML = `<img src="${response.data.condition.icon_url}" class = "weatherIcon"/>`;
+  // document.querySelector("#search-bar")= "Enter a city...";
   
 
 }
