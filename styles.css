@@ -1,10 +1,15 @@
 .weather-conteiner{
+    
     border-radius: 10px;
     max-width: 700px;
     margin: auto;
     margin-top: 100px;
     box-shadow: 0px 15px 20px #0b1e4259;
-   background: linear-gradient(0deg, rgba(247, 247, 247, 0.125) 23.8%, rgba(252, 221, 221, 0.271) 92%);
+   background: linear-gradient(0deg, rgba(195, 179, 206, 0.63) 23.8%, rgba(252, 221, 221, 0.271) 92%);
+      position: absolute; 
+  left: 0;
+  top: 0;
+  right: 0;
 
 
    
@@ -13,7 +18,7 @@
 #current-temp{
     box-shadow: 0px 15px 20px #410b4214;
     border-radius: 50%;
-    background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+    background: linear-gradient(179.4deg, rgba(253, 240, 233, 0.801) 2.2%, rgb(255, 194, 203) 96.2%);
     /* outline: auto; */
     /* display:flex; */
     max-height: 120px;
@@ -29,19 +34,21 @@
    
 }
 #Humidity, #Wind{
+    font-weight:700;
     font-size: small;
     margin-left: 30px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
-    color: rgb(250, 118, 140);
+    color: rgb(27, 26, 46);
     
 }
 #Forecast{
+    font-weight:500;
     margin-left: 280px;
     margin-top: 30px;
     font-size: small;
     display: flex;
-    color: rgb(250, 118, 140);
+    color: rgb(97, 92, 187);
 }
 #week-forecast{
     display: flex;
@@ -64,19 +71,21 @@
 
 } 
 #current-city{ 
+font-weight:700;
 font-size: large;   
  margin-top: 60px;
  margin-left: 15px;
- color: rgb(250, 118, 140);
+color: rgb(27, 26, 46);
  font-family: 'Courier New', Courier, monospace;
      
     
 }
 #current-date {
+    font-weight:700;
     font-size:medium;
     /* margin-bottom: 100px; */
      margin-left: 15px;
-     color: rgb(250, 118, 140);
+     color: rgb(27, 26, 46);
      font-family: 'Courier New', Courier, monospace;
 }
 
@@ -178,4 +187,16 @@ background-color: rgba(255, 255, 255, 0.573);
 }
 #gitHubLink, #appLink,#netlifyLink {
    color: rgb(138, 187, 230);
+}
+img{
+    /* position: relative; */
+   display: block;
+  object-fit: cover;
+  width: 100%;
+  height: fit-content;
+    
+  overflow: visible;
+}
+.overlay {
+  position: absolute; 
 }
